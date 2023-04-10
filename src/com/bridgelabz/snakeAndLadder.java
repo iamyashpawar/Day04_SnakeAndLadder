@@ -1,5 +1,7 @@
 package com.bridgelabz;
 
+import java.util.Random;
+
 public class snakeAndLadder
 {
 
@@ -7,6 +9,9 @@ public class snakeAndLadder
     public static void main(String[] args)
     {
         System.out.println("Welcome to Snake and Ladder Simulation");
+        Random rd = new Random();
+        int die = rd.nextInt(7);
+        
 
     }
 }
