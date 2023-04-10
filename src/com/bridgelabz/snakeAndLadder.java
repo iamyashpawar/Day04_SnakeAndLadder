@@ -15,11 +15,13 @@ public class snakeAndLadder {
         // System.out.println("You rolled : "+ die);
 
         int temp = 0;
+        int numberofDieRolled=0;
 
         while (position < 100)
         {
 
             int die = rd.nextInt(1, 7);
+            numberofDieRolled++;
             int option = rd.nextInt(3);
 
             System.out.println("You rolled : " + die);
@@ -39,6 +41,7 @@ public class snakeAndLadder {
                         position = position -die;
                     }
                     System.out.println("Your Current position is : " + position);
+
                     break;
 
                 case 2:
@@ -72,6 +75,9 @@ public class snakeAndLadder {
 
 
         }
+        System.out.println("In this round "+ numberofDieRolled + " times die rolled");
+
+
         if(position==100)
         {
             System.out.println("Congrats!!! You Win");
